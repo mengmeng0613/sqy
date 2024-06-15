@@ -62,11 +62,11 @@ def generate_wordcloud(word_counts):
 # 运行主程序
 def main():
     st.set_page_config(
-        page_title="文本处理示例",
+        page_title="文本处理",
         page_icon="📝",
     )
 
-    st.title("欢迎使用 Streamlit 文本处理示例 📝")
+    st.title("欢迎使用 Streamlit 文本处理 📝")
 
     url = st.text_input('请输入 URL:')
 
