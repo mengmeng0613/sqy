@@ -21,7 +21,7 @@ def preprocess_text(text):
 # 分词函数
 def word_segmentation(text):
     stopwords = set(
-        ['的', '了', '在', '是', '我', '你', '他', '她', '它', '们', '这', '那', '之', '与', '和', '或', '虽然', '但是', '然而', '因此'])
+        ['的', '了', '在', '是', '我', '你', '他', '她', '它', '们', '这', '那', '之', '与', '和', '或', '虽然', '但是', '然而', '因此', '日', '月'])
     text = re.sub(r'[^\w\s]', '', text)  # 去除标点符号
     words = jieba.lcut(text)
     return [word for word in words if word not in stopwords]
